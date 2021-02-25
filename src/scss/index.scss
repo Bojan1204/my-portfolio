@@ -14,7 +14,10 @@
 // 01. Vendor / Normalize
 @import "utilities/vendor/*.scss";
 
-
+// 02. Custom CSS
+// font-awesome 
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts'
+import '~@fortawesome/fontawesome-free/css/all.css';
 // 03. Custom CSS
 
 // SMACSS - The toolkit uses recommendations from and Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/book
@@ -48,3 +51,5 @@
 // // $Themes
 // // ==========================================================================
 @import 'themes/index';
+
+
