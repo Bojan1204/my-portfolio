@@ -5,19 +5,51 @@
     
     .skills-box{
         width: 800px;
-        height: 400px;
+        //  height: 400px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        justify-content: space-around;
         border: 1px solid #707070;
         border-radius: 20px;
         background-color: #1E242E;
+     
+            .skill-btn{
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                justify-content: space-evenly;
+                border: 1px solid;
+                margin: 10px;
+                border-radius: 10px;
+                width: 150px;
+                padding: 10px 0;
 
-      span{
-          color: #fff;
-      }
+            }
 
+
+            
+    
+          span{
+              color: #fff;
+          }
+    
+           img{
+               width: 40px;
+               height: 40px;
+            //    margin: 0 10px;
+               
+           }
+        
        
-    }
+
+
+
+    }  //end skill-box
+
+
+
+
+
 }

@@ -2,30 +2,32 @@
     display: flex;
     justify-content: center;
     margin: 200px 0;
+    
 
-    // h3{
-    // font-size: 42px;
-    // letter-spacing: 5px;
-    // color: #fff;
-    // text-transform: uppercase;
-    //     &::before{
-    //         content: "";
-           
-    
-    //     }
-    
-    // }
 
     .box{
         width: 800px;
         height: 350px;
         display: flex;
+        position: relative;
         justify-content: center;
         align-items: center;
         justify-content: space-around;
         border: 1px solid #707070;
         border-radius: 20px;
         background-color: #1E242E;
+
+        
+    h3{
+        font-size: 44px;
+        letter-spacing: 5px;
+        position: absolute;
+        top: -1.7em;
+        left: -0.2em;
+        color: #A5A7AB;
+        text-transform: uppercase;
+    
+    }
 
        p{
         
