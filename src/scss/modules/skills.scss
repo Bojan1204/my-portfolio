@@ -1,0 +1,23 @@
+.skills{
+    display: flex;
+    justify-content: center;
+    margin: 200px 0;
+    
+    .skills-box{
+        width: 800px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid #707070;
+        border-radius: 20px;
+        background-color: #1E242E;
+
+      span{
+          color: #fff;
+      }
+
+       
+    }
+}
