@@ -1,48 +1,72 @@
-.aboutme{
+.container{
+    margin: 0 50px;
+
+    @include breakpoint(sm-max) {
+        margin: 0 25px;
+    }
+}
+
+
+.aboutme {
     display: flex;
     justify-content: center;
     margin: 200px 0;
-    
 
-
-    .box{
+    .box {
         width: 800px;
-        height: 350px;
+        // height: 350px;
         display: flex;
+        padding: 80px 0;
         position: relative;
         justify-content: center;
         align-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
         border: 1px solid #707070;
         border-radius: 20px;
-        background-color: #1E242E;
+        background-color: #1e242e;
 
-        
-    h3{
-        font-size: 44px;
-        letter-spacing: 5px;
-        position: absolute;
-        top: -1.7em;
-        left: -0.2em;
-        color: #A5A7AB;
-        text-transform: uppercase;
-    
-    }
+        @include breakpoint(sm-max) {
+            padding: 60px 0;
+        }
 
-       p{
-        
-           color: #fff;
-           text-align: center;
-           font-size: 21px;
-       }
+        h3 {
+            font-size: 44px;
+            letter-spacing: 5px;
+            position: absolute;
+            top: -1.7em;
+            left: -0.2em;
+            color: #a5a7ab;
+            text-transform: uppercase;
 
-       img{
-      
-           overflow: hidden;
-           width: 200px;
-           height: 300px;
-           object-fit: cover;
-       }
+            @include breakpoint(sm-max) {
+                font-size: 32px;
+                position: absolute;
+                top: -1.7em;
+                left: unset;
+            }
+           
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            font-size: 21px;
+            padding: 0 15px;
+           
+        }
+
+        img {
+            overflow: hidden;
+            // width: 300px;
+            // height: 300px;
+            padding: 0 10px;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 0 15px;
+            @include breakpoint(sm-max) {
+                padding: 0 20px;
+            }
+        }
     }
 }
-

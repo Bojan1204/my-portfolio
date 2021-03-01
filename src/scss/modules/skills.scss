@@ -22,6 +22,12 @@
             left: -0.2em;
             color: #A5A7AB;
             text-transform: uppercase;
+            @include breakpoint(sm-max) {
+                font-size: 32px;
+                position: absolute;
+                top: -1.7em;
+                left: unset;
+            }
         }
             .skill-btn{
                 width: 30%;
@@ -108,6 +114,3 @@
 }
 
 
-.container{
-    margin: 0 50px;
-}
