@@ -24,6 +24,7 @@
 
     .projects-content{
             width: 800px;
+            // perspective: 500px;
             display: flex;
             margin: 0 auto;
             justify-content: center;
@@ -44,24 +45,91 @@
        border: 1px solid;
        border-radius: 20px;
        z-index: 2;
-       cursor: pointer;
+      
+
+       //here
+
+       &:hover{
+
+        transition: transform 0.7s;
+       
+       }
+
+
+      
    }
 
    .box1{
-       background-image: url("../img/project1.jpg");
-       background-position: top; 
-         background-repeat: no-repeat; 
-        background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    background-color: #000;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+   
+    &::before{
+      content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      background-image: url("../img/project1.jpg");
+      mix-blend-mode: lighten;
+      border-radius: 20px;
+      background-position: center; 
+        background-repeat: no-repeat; 
+       background-size: cover;
+       opacity: 0.2;
+ 
+    }
+
+    &:hover{
+      transform: rotateY( 180deg );
+    }
+     
    }
+ 
 
+   .box-back{
+    width: 100%;
+    height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      flex-wrap: wrap;
+     border-radius: 20px;
+     text-align: center;
+     background-color: #141C3A;
+     transform: translate(-50%, -50%);
+        backface-visibility: hidden;
+        transform: rotateY( 180deg );
+       
 
-   .box2{
-    background-image: url("../img/project1.jpg");
-    background-position: top; 
-      background-repeat: no-repeat; 
-     background-size: cover;
+        p{
+          text-align: center;
+          color: #fff;
+        }
+        a{
+          width: 150px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          background-color: transparent;
+          color: #fff;
+          border: 1px solid #7510F7;
+          border-radius: 50px;
+          transition: 0.2s ease-in-out;
+          &:hover{
+            background-color: #7510F7;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+        
+
    }
-
 
 
 
