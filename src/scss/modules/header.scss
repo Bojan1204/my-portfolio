@@ -102,7 +102,7 @@ body {
     @include breakpoint(sm-max) {
         
         .site-navbar {
-            width: 100%;
+            width: 95%;
             min-height: 60px;
             ul {
                 position: absolute;
@@ -147,6 +147,9 @@ body {
         align-items: center;
         flex-basis: 90%;
         z-index: 1;
+        @include breakpoint(sm-max){
+            flex-basis: 95%;
+        }
 
         .header-main_content {
             display: block;
