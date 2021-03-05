@@ -1,14 +1,9 @@
-
-.projects{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-    margin: 200px 0;
+.projects {
     position: relative;
     z-index: 0;
-    height: 100vh;
-    background-color: #161D28;
+    padding: 50px 0;
+    margin-bottom: 200px;
+    background-color: #161d28;
 
     &::before {
         content: "";
@@ -23,163 +18,108 @@
         opacity: 0.1;
     }
 
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
 
+        .project-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 200px 0;
+            position: relative;
+            z-index: 0;
 
-    .project-box{
-       margin: 10px;
-       border: 1px solid;
-       border-radius: 20px;
-       z-index: 2;
+            .project-box {
+                // margin: 10px;
+                // border: 1px solid;
+                border-radius: 20px;
+                z-index: 2;
 
-       &:hover{
+                &:hover {
+                    transition: transform 0.7s;
+                }
+            }
 
-        transition: transform 0.7s;
-       
-       }
+            .card1 {
+                width: calc(50% - 40px);
+                padding: 10px;
+                height: 300px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                z-index: 0;
+                background-color: transparent;
+                transition: all 1s ease;
+                transform-style: preserve-3d;
 
+                .card-front,
+                .card-back {
+                    position: absolute;
+                    width: calc(100% - 20px);
+                    height: calc(100% - 20px);
+                    border-radius: 5px;
+                    backface-visibility: hidden;
+                }
 
-      
-   }
+                .card-front {
+                    background: url("../img/project1.jpg");
+                    border-radius: 20px;
+                    background-position: center center;
+                    background-size: cover;
+                }
 
-   .card1{
-    width: 400px;
-    height: 300px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    z-index: 0;
-    background-color: #000;
-     transition: all 1s ease;
-    transform-style: preserve-3d;
-   
-    .card-front, .card-back{
-      position: absolute;
-      width: 400px;
-      height: 300px;
-      border-radius:5px;
-      backface-visibility: hidden;
-    }
+                .card-back {
+                    transform: rotateY(180deg);
+                    background-color: #141c3a;
+                    border-radius: 20px;
+                    
+                }
 
-    .card-front{
-      background:url("../img/project1.jpg");
-      border-radius: 20px;
-      background-position:0 30%;
-      background-size:cover;
+                &:hover {
+                    transform: rotateY(180deg);
+                }
+            }
 
-    }
+            .card-back {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border-radius: 20px;
+                text-align: center;
+                background-color: #141c3a;
+                transform: translate(-50%, -50%);
+                backface-visibility: hidden;
+                transform: rotateY(180deg);
 
-    .card-back{
-      transform: rotateY(180deg);
-        background-color: #141C3A;
-        border-radius: 20px;
-    }
-
-
-
-    &:hover{
-      transform: rotateY( 180deg );
-    }
-     
-   }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   .card-back{
-    width: 100%;
-    height: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-      flex-wrap: wrap;
-     border-radius: 20px;
-     text-align: center;
-     background-color: #141C3A;
-     transform: translate(-50%, -50%);
-        backface-visibility: hidden;
-        transform: rotateY( 180deg );
-       
-
-        p{
-          text-align: center;
-          color: #fff;
-          margin-top: auto;
+                p {
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 50px;
+                    padding: 0 10px;
+                }
+                a {
+                    width: 150px;
+                    height: 40px;
+                    line-height: 40px;
+                    margin-bottom: auto;
+                    text-align: center;
+                    background-color: transparent;
+                    color: #fff;
+                    border: 1px solid #7510f7;
+                    border-radius: 50px;
+                    transition: 0.2s ease-in-out;
+                    &:hover {
+                        background-color: #7510f7;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
-        a{
-          width: 150px;
-          height: 40px;
-          line-height: 40px;
-          margin-bottom: auto;
-          text-align: center;
-          background-color: transparent;
-          color: #fff;
-          border: 1px solid #7510F7;
-          border-radius: 50px;
-          transition: 0.2s ease-in-out;
-          &:hover{
-            background-color: #7510F7;
-            color: #fff;
-            cursor: pointer;
-          }
-        }
-        
-
-   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 }
-  // &::before{
-    //   content: "";
-    //     position: absolute;
-    //     top: 0px;
-    //     right: 0px;
-    //     bottom: 0px;
-    //     left: 0px;
-    //   background-image: url("../img/project1.jpg");
-    //   mix-blend-mode: lighten;
-    //   border-radius: 20px;
-    //   background-position: center; 
-    //     background-repeat: no-repeat; 
-    //    background-size: cover;
-    //    opacity: 0.2;
- 
-    // }
