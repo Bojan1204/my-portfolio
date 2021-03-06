@@ -22,8 +22,6 @@ body {
         opacity: 0.3;
     }
 
-  
-
     .site-navbar {
         width: 90%;
         position: absolute;
@@ -52,7 +50,6 @@ body {
         }
     }
 
-   
     .nav-toggler {
         border: 3px solid #fff;
         padding: 5px;
@@ -61,14 +58,15 @@ body {
         height: 39px;
         display: none;
 
-        span,span::before,span::after{
-                    width: 28px;
-                    height: 3px;
-                    background-color: #fff;
-                    display: block;
-                    transition: 0.3s;
+        span,
+        span::before,
+        span::after {
+            width: 28px;
+            height: 3px;
+            background-color: #fff;
+            display: block;
+            transition: 0.3s;
         }
-
 
         span:before {
             content: "";
@@ -79,15 +77,8 @@ body {
             content: "";
             transform: translateY(6px);
         }
-
-        
-
-
-
-
     }
 
- 
     .toggler-open span {
         background-color: transparent;
     }
@@ -98,9 +89,7 @@ body {
         transform: translateY(-3px) rotate(-45deg);
     }
 
-
     @include breakpoint(sm-max) {
-        
         .site-navbar {
             width: 100%;
             min-height: 60px;
@@ -150,7 +139,7 @@ body {
         align-items: center;
         flex-basis: 90%;
         z-index: 1;
-        @include breakpoint(sm-max){
+        @include breakpoint(sm-max) {
             flex-basis: 95%;
         }
 
