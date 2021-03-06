@@ -54,6 +54,11 @@
                 transition: all 1s ease;
                 transform-style: preserve-3d;
 
+                @include breakpoint(sm-max) {
+                width: calc(100% - 40px);
+                    
+                }
+
                 .card-front,
                 .card-back {
                     position: absolute;
