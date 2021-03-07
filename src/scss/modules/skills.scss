@@ -1,0 +1,116 @@
+.skills{
+    display: flex;
+    justify-content: center;
+    margin: 200px 0;
+    
+    .skills-box{
+        width: 800px;
+         padding: 80px 0;
+         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid #707070;
+        border-radius: 20px;
+        background-color: #1E242E;
+        
+        h3{
+            font-size: 44px;
+            letter-spacing: 5px;
+            position: absolute;
+            top: -1.7em;
+            left: -0.2em;
+            color: #A5A7AB;
+            text-transform: uppercase;
+            @include breakpoint(sm-max) {
+                font-size: 32px;
+                position: absolute;
+                top: -1.7em;
+                left: unset;
+            }
+        }
+            .skill-btn{
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-evenly;
+                border: 1px solid;
+                margin: 10px;
+                border-radius: 10px;
+                width: 200px;
+                padding: 10px 0;
+                transition: 0.2s ease-in-out;
+                cursor: pointer;
+
+                &:hover{
+                    transform: translateY(-1px);
+                    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                }
+
+            }
+
+            .html{
+                text-transform: uppercase;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    
+                }
+            }
+            .css{
+                text-transform: uppercase;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    
+                }
+            }
+            .sass{
+                text-transform: uppercase;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    
+                }
+            }
+            .xd{
+                img{
+                    width: 50px;
+                    height: 50px;
+                    
+                }
+            }
+
+            .bost4{
+               img{
+                width: 50px;
+                height: 50px;
+               }
+            }
+
+
+    
+          span{
+              color: #fff;
+          }
+    
+          img{
+            width: 40px;
+            height: 40px;
+            
+        }
+        
+       
+
+
+
+    }  //end skill-box
+
+
+
+
+
+}
+
+

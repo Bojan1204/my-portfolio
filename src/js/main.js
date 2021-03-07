@@ -1,3 +1,4 @@
+
 // define all UI variable
 const navToggler = document.querySelector('.nav-toggler');
 const navMenu = document.querySelector('.site-navbar ul');
@@ -26,6 +27,7 @@ function navLinkClick() {
     navToggler.click();
   }
 }
+
 
 
 
