@@ -61,5 +61,4 @@ source/vendors
 node_modules/
 .sass-cache
 *.css.map
-dist/* 
 !.gitkeep
