@@ -37,8 +37,7 @@
             z-index: 0;
 
             .project-box {
-                // margin: 10px;
-                // border: 1px solid;
+        
                 border-radius: 20px;
                 z-index: 2;
 
@@ -123,7 +122,9 @@
                 a {
                     width: 150px;
                     height: 40px;
-                    line-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
                     margin-bottom: auto;
                     text-align: center;
                     background-color: transparent;

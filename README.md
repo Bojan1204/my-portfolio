@@ -3,12 +3,6 @@
 
 ## next steps 
 
-- fix favicon
-
-- hamg button z-index 1
-- change header font
-
-
 Enjoy in my personal portoflio.
 
 ## Table of Contents
