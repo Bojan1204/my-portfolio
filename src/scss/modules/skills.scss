@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
     margin: 200px 0;
+    @include breakpoint(sm-max) {
+        margin: 100px 0;
+            
+        }
     
     .skills-box{
         width: 800px;
