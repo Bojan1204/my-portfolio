@@ -31,3 +31,14 @@ function navLinkClick() {
 
 
 
+
+const navigation = document.querySelector(".site-navbar");
+
+window.onscroll = () => {
+    if (window.scrollY > 10) {
+        navigation.classList.add("addResizeNavigation");
+    } else {
+        navigation.classList.remove("addResizeNavigation");
+    }
+};
+
