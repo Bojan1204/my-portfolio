@@ -2,8 +2,7 @@
 ---
 
 ## next steps 
-- contact me ubaciti cv
-- ubaciti naslov i projekte u projects
+
 
 Enjoy in my personal portoflio.
 
