@@ -2,7 +2,6 @@
 ---
 
 ## next steps 
-- promjeniti font headinga
 - contact me ubaciti cv
 - ubaciti naslov i projekte u projects
 - smanjiti i srediti footer i icone 
