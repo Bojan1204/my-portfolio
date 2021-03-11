@@ -33,7 +33,7 @@
             text-transform: uppercase;
             padding-top: 100px;
             color: #fff;
-            letter-spacing: 10px;
+            letter-spacing: 5px;
 
 
             h3{
@@ -103,7 +103,21 @@
                     background-position: center center;
                     background-size: cover;
                 }
-              
+                
+                .project3 {
+                    background: url("../img/project3.png");
+                    border-radius: 20px;
+                    background-position: center center;
+                    background-size: cover;
+                    background-color: rgba(255, 255, 255, 0.363);
+                }
+
+                .project4 {
+                    background: url("../img/project4.png");
+                    border-radius: 20px;
+                    background-position: center center;
+                    background-size: cover;
+                }
 
                 .card-back {
                     transform: rotateY(180deg);
