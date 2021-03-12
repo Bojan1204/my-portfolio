@@ -51,7 +51,7 @@ $font-family-sans-fallback:   'Arial', sans-serif;
 // @requires - `$font-family-sans-fallback`
 
 $font-family-sans:            'Helvetica Neue', 'Helvetica', $font-family-sans-fallback;
-$font-family-fira-sans:     'FiraSans-SemiBold', $font-family-sans;
+$font-family-raleway:     'Raleway-Black', $font-family-sans;
 $font-family-sans-text:       'Calibri', $font-family-sans;
 
 
@@ -78,7 +78,7 @@ $font-family-monospace:       'Inconsolata', 'Menlo', 'Consolas', 'Bitstream Ver
 //
 // $font-family-display - {list}
 
-$font-family-display:         $font-family-fira-sans;
+$font-family-display:         $font-family-raleway;
 
 // $font-family-default
 //
