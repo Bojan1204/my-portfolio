@@ -162,11 +162,13 @@ html {
         .header-main_content {
             display: block;
             color: #fff;
-            letter-spacing: 5px;
-            line-height: 50px;
+
+            h1{
+            font-size: 4em;
+            }
 
             .header-button {
-                padding: 12px 20px;
+                padding: 14px 20px;
                 text-transform: uppercase;
                 border: none;
                 border-radius: 10px;
