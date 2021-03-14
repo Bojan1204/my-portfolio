@@ -8,6 +8,10 @@ html {
     .scroll-element {
         scroll-margin: 100px 0 0 50px;
       }
+
+      .projects{
+        scroll-margin: -110px 0 0 50px;
+      }
   }
 
 .header {
@@ -165,6 +169,10 @@ html {
 
             h1{
             font-size: 4em;
+
+            @include breakpoint(sm-max) {
+                font-size: 2em;
+            }
             }
 
             .header-button {
